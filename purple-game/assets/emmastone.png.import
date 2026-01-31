@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d7rybl8e551e"
-path="res://.godot/imported/emmastone.jpg-0bfeea956915b02b42c2296dbaa1edd3.ctex"
+uid="uid://bln34gskrw81q"
+path="res://.godot/imported/emmastone.png-918002cc10a7052fc7863bbb73872133.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://emmastone.jpg"
-dest_files=["res://.godot/imported/emmastone.jpg-0bfeea956915b02b42c2296dbaa1edd3.ctex"]
+source_file="res://assets/emmastone.png"
+dest_files=["res://.godot/imported/emmastone.png-918002cc10a7052fc7863bbb73872133.ctex"]
 
 [params]
 

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bowwtnv72rsks"]
+
+[ext_resource type="Texture2D" uid="uid://dm2yyjrgnaqc6" path="res://assets/transformer.png" id="1_anuac"]
+[ext_resource type="Script" uid="uid://dhsv2uf6pigma" path="res://scripts/transformer.gd" id="1_bay5w"]
+[ext_resource type="PackedScene" uid="uid://cstufh1jr2jvx" path="res://interaction_components/interactable.tscn" id="2_bay5w"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_cypkt"]
+points = PackedVector2Array(-32, -17, -32, 17, 0, 32, 32, 17, 32, -17, 0, -32)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1rvo3"]
+radius = 43.0
+
+[node name="Transformer" type="StaticBody2D" unique_id=631186918]
+script = ExtResource("1_bay5w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1588791672]
+texture_filter = 1
+texture = ExtResource("1_anuac")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=796822231]
+shape = SubResource("ConvexPolygonShape2D_cypkt")
+
+[node name="Interactable" parent="." unique_id=1843991552 instance=ExtResource("2_bay5w")]
+interact_name = "TransformerDialogue"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=172355276]
+shape = SubResource("CircleShape2D_1rvo3")
