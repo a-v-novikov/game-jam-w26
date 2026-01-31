@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckgta12686ixp"
-path="res://.godot/imported/planks.png-ecb248a289368bd604f186de27c20877.ctex"
+uid="uid://clunn34jggioh"
+path="res://.godot/imported/roof NEW REAL.png-da645d8c7b379db76667a7cd097ebe55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://planks.png"
-dest_files=["res://.godot/imported/planks.png-ecb248a289368bd604f186de27c20877.ctex"]
+source_file="res://assets/tiles/roof NEW REAL.png"
+dest_files=["res://.godot/imported/roof NEW REAL.png-da645d8c7b379db76667a7cd097ebe55.ctex"]
 
 [params]
 

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dipwr45mu4qo1"]
+
+[ext_resource type="Script" uid="uid://cm8t3er5e08rv" path="res://scripts/player/emma.gd" id="1_gju0k"]
+[ext_resource type="Texture2D" uid="uid://bln34gskrw81q" path="res://assets/player/emmastone.png" id="2_l765y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_44cfe"]
+radius = 2.0
+
+[node name="Emma" type="CharacterBody2D" unique_id=1252624886]
+motion_mode = 1
+script = ExtResource("1_gju0k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1158792380]
+shape = SubResource("CircleShape2D_44cfe")
+
+[node name="Emmastone" type="Sprite2D" parent="." unique_id=758402368]
+z_index = 2
+texture_filter = 1
+position = Vector2(0, -14)
+texture = ExtResource("2_l765y")
