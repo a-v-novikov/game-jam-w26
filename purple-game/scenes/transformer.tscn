@@ -21,7 +21,7 @@ texture = ExtResource("1_anuac")
 shape = SubResource("ConvexPolygonShape2D_cypkt")
 
 [node name="Interactable" parent="." unique_id=1843991552 instance=ExtResource("2_bay5w")]
-interact_name = "TransformerDialogue"
+interact_name = "A transformer box..."
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=172355276]
 shape = SubResource("CircleShape2D_1rvo3")

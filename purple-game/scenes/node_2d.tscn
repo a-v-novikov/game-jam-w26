@@ -78,7 +78,7 @@ script = ExtResource("2_epypp")
 motion_mode = 0
 
 [node name="Camera2D" type="Camera2D" parent="Entities/Emma" unique_id=1989916760]
-zoom = Vector2(6, 6)
+zoom = Vector2(4, 4)
 position_smoothing_enabled = true
 
 [node name="Transformer" parent="Entities" unique_id=631186918 instance=ExtResource("4_4vge2")]

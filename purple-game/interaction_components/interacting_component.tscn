@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://l2ym1l20fpe5"]
 
 [ext_resource type="Script" uid="uid://bm2cldqaymsdb" path="res://interaction_components/interacting_component.gd" id="1_xa01l"]
+[ext_resource type="FontFile" uid="uid://byxvxxcsotdhr" path="res://assets/font/GomePixel-ARJd7.otf" id="2_1m31a"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lqmmv"]
 radius = 6.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_xa01l"]
+font = ExtResource("2_1m31a")
 font_size = 12
+outline_size = 3
+outline_color = Color(0.003250772, 0.10602874, 0.14362288, 1)
 
 [node name="InteractingComponent" type="Node2D" unique_id=182035103]
 script = ExtResource("1_xa01l")
@@ -20,6 +24,7 @@ shape = SubResource("CircleShape2D_lqmmv")
 
 [node name="InteractLabel" type="Label" parent="." unique_id=1868957569]
 z_index = 10
+texture_filter = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
