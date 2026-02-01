@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://de120npp8rh56"]
+
+[ext_resource type="Texture2D" uid="uid://grhpc2nklp3" path="res://assets/exit.png" id="1_l0aq0"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_uyw7u"]
+points = PackedVector2Array(-38, 37, 8, 59, 40, 44, 40, 0, -38, 0)
+
+[node name="Exit" type="StaticBody2D" unique_id=890237801]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=578230508]
+texture_filter = 1
+texture = ExtResource("1_l0aq0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1408674559]
+shape = SubResource("ConvexPolygonShape2D_uyw7u")

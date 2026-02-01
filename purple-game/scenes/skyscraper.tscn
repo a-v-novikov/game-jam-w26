@@ -1,12 +1,14 @@
 [gd_scene format=4 uid="uid://buooldn8mfiah"]
 
-[ext_resource type="Texture2D" uid="uid://clunn34jggioh" path="res://assets/tiles/roof NEW REAL.png" id="1_wtcfe"]
-[ext_resource type="PackedScene" uid="uid://dipwr45mu4qo1" path="res://scenes/emma.tscn" id="2_0e48y"]
-[ext_resource type="Script" uid="uid://cjflslt8klly1" path="res://scripts/tile_map_layer.gd" id="2_epypp"]
-[ext_resource type="PackedScene" uid="uid://bowwtnv72rsks" path="res://scenes/transformer.tscn" id="4_4vge2"]
+[ext_resource type="Texture2D" uid="uid://clunn34jggioh" path="res://assets/tiles/roof NEW REAL.png" id="1_5pluy"]
+[ext_resource type="Script" uid="uid://cjflslt8klly1" path="res://scripts/tile_map_layer.gd" id="2_b55vv"]
+[ext_resource type="PackedScene" uid="uid://dipwr45mu4qo1" path="res://scenes/emma.tscn" id="3_q6ale"]
+[ext_resource type="PackedScene" uid="uid://bowwtnv72rsks" path="res://scenes/transformer.tscn" id="4_i2scu"]
+[ext_resource type="PackedScene" uid="uid://de120npp8rh56" path="res://scenes/exit.tscn" id="5_wemv6"]
+[ext_resource type="Texture2D" uid="uid://bvr2luic2dj0g" path="res://assets/skyscraper.png" id="6_k6234"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e48y"]
-texture = ExtResource("1_wtcfe")
+texture = ExtResource("1_5pluy")
 texture_region_size = Vector2i(32, 32)
 0:0/next_alternative_id = 3
 0:0/0 = 0
@@ -62,6 +64,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_0e48y")
 
 [node name="Skyscraper" type="Node2D" unique_id=963961040]
+texture_filter = 1
 
 [node name="TileMapLayers" type="Node2D" parent="." unique_id=1350620124]
 
@@ -70,16 +73,25 @@ y_sort_enabled = true
 texture_filter = 1
 tile_map_data = PackedByteArray("AAD///3/AAACAAAAAAD///7/AAACAAAAAAD/////AAACAAAAAAAAAP7/AAACAAAAAAAAAAAAAAACAAAAAAAAAP//AAACAAAAAAD+////AAACAAAAAAD//wAAAAACAAAAAAAAAPz/AAACAAAAAAAAAP3/AAACAAAAAAD///z/AAACAAAAAAD+//3/AAACAAAAAAAAAPv/AAACAAAAAAABAPz/AAACAAAAAAD+/wEAAAACAAAAAAD+/wAAAAACAAAAAAD+//v/AAACAAAAAAD+//z/AAACAAAAAAAAAAEAAAACAAAAAAABAAAAAAACAAAAAAD9//3/AAACAAAAAAD9//7/AAACAAAAAAD9////AAACAAAAAAD+//7/AAACAAAAAAD///r/AAACAAAAAAD///n/AAACAAAAAAAAAPr/AAACAAAAAAD///v/AAACAAAAAAABAP3/AAACAAAAAAACAP7/AAACAAAAAAABAP//AAACAAAAAAACAAAAAAACAAAAAAABAP7/AAACAAAAAAD//wEAAAACAAAAAAD//wIAAAACAAAAAAD//wMAAAACAAAAAAAAAAIAAAACAAAAAAACAP//AAACAAAAAAABAAEAAAACAAAAAAABAAIAAAACAAAAAAAAAAMAAAACAAAAAAAAAAQAAAACAAAAAAD//wUAAAACAAAAAAD//wQAAAACAAAAAAD+/wMAAAACAAAAAAD+/wIAAAACAAAAAAD9/wEAAAACAAAAAAD8////AAACAAAAAAD8//7/AAACAAAAAAD8//3/AAACAAAAAAD9//z/AAACAAAAAAD9//v/AAACAAAAAAD+//r/AAACAAAAAAD+//n/AAACAAAAAAD///j/AAACAAAAAAD9/wAAAAACAAAAAAD///f/AAACAAAAAAAAAPj/AAACAAAAAAAAAPn/AAACAAAAAAABAPr/AAACAAAAAAABAPv/AAACAAAAAAACAPz/AAACAAAAAAACAP3/AAACAAAAAAADAP7/AAACAAAAAAD7//r/AAACAAAAAAD7//v/AAACAAAAAAD7//n/AAACAAAAAAD8//r/AAACAAAAAAD8//j/AAACAAAAAAD8//n/AAACAAAAAAD8//f/AAACAAAAAAD9//j/AAACAAAAAAD9//b/AAACAAAAAAD9//f/AAACAAAAAAD9//X/AAACAAAAAAD+//b/AAACAAAAAAD+//T/AAACAAAAAAD+//X/AAACAAAAAAD+//P/AAACAAAAAAD///T/AAACAAAAAAD6//n/AAACAAAAAAD7//j/AAACAAAAAAD7//f/AAACAAAAAAD8//b/AAACAAAAAAD8//X/AAACAAAAAAD9//T/AAACAAAAAAD9//P/AAACAAAAAAD///L/AAACAAAAAAD+//H/AAACAAAAAAD+//L/AAACAAAAAAD///P/AAACAAAAAAAAAPT/AAACAAAAAAAAAPX/AAACAAAAAAABAPb/AAACAAAAAAABAPf/AAACAAAAAAACAPj/AAACAAAAAAACAPn/AAACAAAAAAADAPr/AAACAAAAAAADAPv/AAACAAAAAAAEAPr/AAACAAAAAAAEAPn/AAACAAAAAAAEAPj/AAACAAAAAAADAPf/AAACAAAAAAADAPb/AAACAAAAAAACAPX/AAACAAAAAAACAPT/AAACAAAAAAABAPP/AAACAAAAAAABAPL/AAACAAAAAAAAAPH/AAACAAAAAAAAAPD/AAACAAAAAAD///H/AAACAAAAAAD///D/AAACAAAAAAD//+//AAACAAAAAAAAAPL/AAACAAAAAAAAAPP/AAACAAAAAAABAPT/AAACAAAAAAABAPX/AAACAAAAAAACAPb/AAACAAAAAAACAPf/AAACAAAAAAADAPj/AAACAAAAAAADAPn/AAACAAAAAAABAPn/AAADAAAAAQD9//n/AAAEAAAAAQABAPj/AAADAAAAAwD+//j/AAAEAAAAAwACAPr/AAAAAAAAAgD9//r/AAAAAAAAAQA=")
 tile_set = SubResource("TileSet_epypp")
-script = ExtResource("2_epypp")
+script = ExtResource("2_b55vv")
 
 [node name="Entities" type="Node2D" parent="." unique_id=809067863]
 
-[node name="Emma" parent="Entities" unique_id=1252624886 instance=ExtResource("2_0e48y")]
+[node name="Emma" parent="Entities" unique_id=1252624886 instance=ExtResource("3_q6ale")]
 motion_mode = 0
 
 [node name="Camera2D" type="Camera2D" parent="Entities/Emma" unique_id=1989916760]
 zoom = Vector2(4, 4)
 position_smoothing_enabled = true
 
-[node name="Transformer" parent="Entities" unique_id=631186918 instance=ExtResource("4_4vge2")]
-position = Vector2(-1, -130)
+[node name="Transformer" parent="Entities" unique_id=631186918 instance=ExtResource("4_i2scu")]
+position = Vector2(-131, -63)
+
+[node name="Exit" parent="Entities" unique_id=890237801 instance=ExtResource("5_wemv6")]
+position = Vector2(6, -155)
+
+[node name="Skyscraper" type="Sprite2D" parent="." unique_id=1387460450]
+z_index = -6
+texture_filter = 1
+position = Vector2(0, 110)
+texture = ExtResource("6_k6234")

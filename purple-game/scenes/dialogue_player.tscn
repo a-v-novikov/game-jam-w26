@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c5ao8a6afwoqt"]
+
+[ext_resource type="Script" uid="uid://dilr0ylcqfp36" path="res://scripts/dialogue_player.gd" id="1_seo6n"]
+[ext_resource type="Texture2D" uid="uid://cji62ba1exnps" path="res://assets/dialogue_area.png" id="2_71jv0"]
+[ext_resource type="FontFile" uid="uid://byxvxxcsotdhr" path="res://assets/font/GomePixel-ARJd7.otf" id="3_qwa2t"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1gicr"]
+font = ExtResource("3_qwa2t")
+font_color = Color(0.19804284, 0.003218055, 0.016254362, 1)
+
+[node name="DialoguePlayer" type="CanvasLayer" unique_id=1253561365]
+process_mode = 3
+script = ExtResource("1_seo6n")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1773092383]
+offset_right = 85.0
+offset_bottom = 34.0
+texture = ExtResource("2_71jv0")
+
+[node name="TextLabel" type="Label" parent="." unique_id=1446195495]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 123.0
+offset_bottom = 59.0
+label_settings = SubResource("LabelSettings_1gicr")
+autowrap_mode = 2
